@@ -29,8 +29,8 @@ fetch(
       selectedCharacter = characters.find(
         (char) => char.name === e.target.value
       );
-      name.textContent = selectedCharacter.name;
-      weightRank.textContent = selectedCharacter.weight;
+      name.textContent = `Name: ${selectedCharacter.name}`;
+      weightRank.textContent = `Weight Ranking: ${selectedCharacter.weight}`;
       description.textContent = selectedCharacter.guide;
       label.innerHTML = `Leave a review for <strong>${selectedCharacter.name}</strong>`;
     });
